@@ -13,7 +13,7 @@ from Leap import CircleGesture, KeyTapGesture, ScreenTapGesture, SwipeGesture
 
 
 class SampleListener(Leap.Listener):
-    datasets = open("data.csv", 'wb')
+    datasets = open("../dataset/dataset-E.csv", 'wb')
     def on_init(self, controller):
         print "Initialized"
 
@@ -36,7 +36,7 @@ class SampleListener(Leap.Listener):
             # Get the hand's and direction
             direction = hand.direction
             # Get fingers
-            self.datasets.write("0"),
+            self.datasets.write("4"),
             for finger in hand.fingers:
                 # Get bones
                 for i in range(0,4):
