@@ -40,15 +40,15 @@ class SampleListener(Leap.Listener):
                 # Get bones
                 for i in range(0,4):
                     self.datasets.write (",%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f" % (
-                        finger.bone(i).prev_joint.x,
-                        finger.bone(i).prev_joint.y,
-                        finger.bone(i).prev_joint.z,
-                        finger.bone(i).next_joint.x,
-                        finger.bone(i).next_joint.y,
-                        finger.bone(i).next_joint.z,
-                        finger.bone(i).direction.x,
-                        finger.bone(i).direction.y,
-                        finger.bone(i).direction.z
+                        finger.bone(0).prev_joint.x,
+                        finger.bone(0).prev_joint.y,
+                        finger.bone(0).prev_joint.z,
+                        finger.bone(0).next_joint.x,
+                        finger.bone(0).next_joint.y,
+                        finger.bone(0).next_joint.z,
+                        finger.bone(0).direction.x,
+                        finger.bone(0).direction.y,
+                        finger.bone(0).direction.z
                     )),
             self.datasets.write ("\n")
         
