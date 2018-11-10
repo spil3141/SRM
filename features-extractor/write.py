@@ -35,20 +35,20 @@ class SampleListener(Leap.Listener):
             # Get the hand's and direction
             direction = hand.direction
             # Get fingers
-            self.datasets.write("4"),
+            self.datasets.write("0"),
             for finger in hand.fingers:
                 # Get bones
                 for i in range(0,4):
                     self.datasets.write (",%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f" % (
-                        finger.bone(0).prev_joint.x,
-                        finger.bone(0).prev_joint.y,
-                        finger.bone(0).prev_joint.z,
-                        finger.bone(0).next_joint.x,
-                        finger.bone(0).next_joint.y,
-                        finger.bone(0).next_joint.z,
-                        finger.bone(0).direction.x,
-                        finger.bone(0).direction.y,
-                        finger.bone(0).direction.z
+                        finger.bone(i).prev_joint.x,
+                        finger.bone(i).prev_joint.y,
+                        finger.bone(i).prev_joint.z,
+                        finger.bone(i).next_joint.x,
+                        finger.bone(i).next_joint.y,
+                        finger.bone(i).next_joint.z,
+                        finger.bone(i).direction.x,
+                        finger.bone(i).direction.y,
+                        finger.bone(i).direction.z
                     )),
             self.datasets.write ("\n")
         
