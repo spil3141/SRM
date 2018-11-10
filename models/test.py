@@ -33,6 +33,7 @@ class SampleListener(Leap.Listener):
             for finger in hand.fingers:
                 # Get bones
                 for i in range(0,4):
+<<<<<<< HEAD
                     print (",%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f" % (
                         finger.bone(0).prev_joint.x,
                         finger.bone(0).prev_joint.y,
@@ -43,6 +44,18 @@ class SampleListener(Leap.Listener):
                         finger.bone(0).direction.x,
                         finger.bone(0).direction.y,
                         finger.bone(0).direction.z
+=======
+                    data.write (",%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f" % (
+                        finger.bone(i).prev_joint.x,
+                        finger.bone(i).prev_joint.y,
+                        finger.bone(i).prev_joint.z,
+                        finger.bone(i).next_joint.x,
+                        finger.bone(i).next_joint.y,
+                        finger.bone(i).next_joint.z,
+                        finger.bone(i).direction.x,
+                        finger.bone(i).direction.y,
+                        finger.bone(i).direction.z
+>>>>>>> debug
                     )),
         
 
