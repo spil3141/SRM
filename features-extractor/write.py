@@ -9,11 +9,10 @@ import sys
 sys.path.insert(1,'../dependencies/lib-mac')
 sys.path.insert(0,'../dependencies/lib-mac/Leap.py')
 import Leap, thread, time
-from Leap import CircleGesture, KeyTapGesture, ScreenTapGesture, SwipeGesture
 
 
 class SampleListener(Leap.Listener):
-    datasets = open("../dataset/dataset-E.csv", 'wb')
+    datasets = open("../dataset/test.csv", 'wb')
     def on_init(self, controller):
         print "Initialized"
 

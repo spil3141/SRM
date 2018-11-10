@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np 
 from sklearn.externals import joblib
 
-filename = 'SRM_1.sav'
+filename = 'SRM_2.sav'
 data1 = pd.read_csv("../dataset/dataset-A.csv")
 data2 = pd.read_csv("../dataset/dataset-B.csv")
 data3 = pd.read_csv("../dataset/dataset-C.csv")
