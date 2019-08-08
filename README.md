@@ -11,8 +11,8 @@
 ### How to setup the Demo: 
  - Download or Clone the Repository on your local computer. 
  - Using Pip (python's package installer) install all  necessary python modules for this project.
-      - Leap 
-      - numpy
+      - Leap -> (SDK Version 3.2.1 )
+      - numpy 
       - sckit-learn
       - pandas
       - joblib
