@@ -20,7 +20,7 @@ import Leap, thread, time, os
 
  
 class SampleListener(Leap.Listener):
-    datasets = open("../dataset/dataset-C.csv", 'wb')
+    datasets = open("../dataset/dataset-.csv", 'wb')
     def on_init(self, controller):
         print "Initialized"
 
