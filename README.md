@@ -8,7 +8,7 @@
   2. Machine Learning 
   3. Python 2.7 
  Note: Leap Motion SDK for this Project Supports Only Python 2.7 . 
-### How to run Demo: 
+### How to setup the Demo: 
  - Download or Clone the Repository on your local computer. 
  - Using Pip (python's package installer) install all  necessary python modules.
       - numpy
