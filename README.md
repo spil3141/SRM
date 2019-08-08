@@ -10,7 +10,7 @@
  Note: Leap Motion SDK for this Project Supports Only Python 2.7 . 
 ### How to setup the Demo: 
  - Download or Clone the Repository on your local computer. 
- - Using Pip (python's package installer) install all  necessary python modules.
+ - Using Pip (python's package installer) install all  necessary python modules for this project.
       - numpy
       - sckit-learn
       - pandas
