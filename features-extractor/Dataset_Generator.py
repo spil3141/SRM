@@ -18,9 +18,9 @@ sys.path.insert(1, os.path.abspath(os.path.join(src_dir, "../dependencies/lib-wi
 #sys.path.insert(0,'../dependencies/lib-mac/Leap.py')
 import Leap, thread, time, os
 
-
+ 
 class SampleListener(Leap.Listener):
-    datasets = open("../dataset/dataset-.csv", 'wb')
+    datasets = open("../dataset/dataset-C.csv", 'wb')
     def on_init(self, controller):
         print "Initialized"
 
@@ -42,7 +42,7 @@ class SampleListener(Leap.Listener):
         for hand in frame.hands:
             # Get the hand's Bones and direction
             # Get fingers
-            self.datasets.write("0"),
+            self.datasets.write("2"),
             for finger in hand.fingers:
                 # Get bones
                 for i in range(0,4):
