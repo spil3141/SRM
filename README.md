@@ -19,7 +19,7 @@
  - Connect the Leap Motion device and make sure that you have the drivers installed
  - Turn the Leap Motion tracking on. 
  - Using Python 2.7 env with all the dependencies installed : 
-      - Run the file called "realtime_implementation.py"
+      - Run the file called "Codes/realtime_implementation.py"
       
   
   
