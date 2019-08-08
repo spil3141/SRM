@@ -23,7 +23,7 @@
       - Run the file called "Codes/realtime_implementation.py"
       
   
- Expected Result: 
+ #### Expected Result: 
   - Outputs: 
     1. File was Empty : meaning that the head information from the leap motion does not contain valid content. 
     2. Prediction: X
