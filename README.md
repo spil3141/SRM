@@ -6,4 +6,21 @@
 ### Topics 
   1. Leap Motion 
   2. Machine Learning 
-  3. Python 
+  3. Python 2.7 
+ Note: Leap Motion SDK for this Project Supports Only Python 2.7 . 
+### How to run Demo: 
+ - Download or Clone the Repository on your local computer. 
+ - Using Pip (python's package installer) install all  necessary python modules.
+      - numpy
+      - sckit-learn
+      - pandas
+      - joblib
+      - etc 
+ - Connect the Leap Motion device and make sure that you have the drivers installed
+ - Turn the Leap Motion tracking on. 
+ - Using Python 2.7 env with all the dependencies installed : 
+      - Run the file called "realtime_implementation.py"
+      
+  
+  
+ 
