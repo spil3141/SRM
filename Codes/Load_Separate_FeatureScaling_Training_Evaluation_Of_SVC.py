@@ -68,12 +68,28 @@ joblib.dump(sc, "../Trained_Models/Fitted_StandardScaler.sav")
 
 """ Testing the performance of trained model """
 from sklearn.metrics import accuracy_score 
-
 loaded_model = joblib.load("../Trained_Models/SVC_Version_0.1.sav")
 loaded_sc = joblib.load("../Trained_Models/Fitted_StandardScaler.sav")
 
 
-y_pred = loaded_model.predict(loaded_sc.transform(X_test))
-print "Accuracy: %.2f" % accuracy_score(y_test,y_pred)
+#y_pred = loaded_model.predict(loaded_sc.transform(X_test))
+#print "Accuracy: %.2f" % accuracy_score(y_test,y_pred)
+
+from sklearn.model_selection import cross_val_score 
+from sklearn.preprocessing import StandardScaler 
+
+sc = StandardScaler()
+sc.fit(X)
+
+X_std = sc.transform(X)
+
+
+scores = cross_val_score(estimator=loaded_model,
+                         X=X_std,
+                         y=y,
+                         cv=100,
+                         n_jobs=-1)
+
+
 
 
